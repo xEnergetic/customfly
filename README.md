@@ -1,10 +1,20 @@
-# customfly
+customfly
 <?php
 namespace fly\MyPlugin;
 
 use pocketmine\plugin\PluginBase;
+use pocketmine\plugin\PluginBase; 
+5 use pocketmine\event\Listener; 
+6 use pocketmine\utils\TextFormat; 
+7 use pocketmine\event\entity\EntityDamageEvent; 
+8 use pocketmine\event\entity\EntityDamageByEntityEvent; 
+9 use pocketmine\Player; 
+10 use pocketmine\command\Command; 
+11 use pocketmine\command\CommandSender; 
+12  
 
-class MyPlugin extends PluginBase{
+
+
 
     public function onEnable(){
         $this->getLogger()->info("onEnable() fly has been enabled");
